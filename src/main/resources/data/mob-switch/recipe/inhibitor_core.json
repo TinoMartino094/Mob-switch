@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        " T ",
+        "TCT",
+        " T "
+    ],
+    "key": {
+        "T": "minecraft:torch",
+        "C": "minecraft:heavy_core"
+    },
+    "result": {
+        "id": "minecraft:heavy_core",
+        "count": 1,
+        "components": {
+            "minecraft:custom_data": {
+                "chunk_pylon": 1
+            },
+            "minecraft:item_name": {
+                "text": "Inhibitor Core",
+                "color": "gold",
+                "italic": false
+            },
+            "minecraft:lore": [
+                {
+                    "text": "Prevents monster spawns",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "text": "within its chunk.",
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        }
+    }
+}

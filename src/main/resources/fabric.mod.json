@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "mob-switch",
+	"version": "${version}",
+	"name": "Mob switch",
+	"description": "A server-side Mob Switch mod that uses Inhibitor Cores (Heavy Core blocks with specific tags) to prevent mob spawning in specific chunks. Inhibitor Cores are unpushable by pistons and block natural and structure-based monster spawns.",
+	"authors": [
+		"TinoMartino"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mob-switch/icon.png",
+	"environment": "*",
+	"custom": {
+		"fabric-api:client-optional": true
+	},
+	"entrypoints": {
+		"main": [
+			"com.tino.mob.MobSwitch"
+		]
+	},
+	"mixins": [
+		"mob-switch.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
